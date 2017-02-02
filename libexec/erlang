@@ -41,6 +41,7 @@ set_deploy_hosts() {
   if [ "$DEPLOY_ENVIRONMENT" = "production" ]; then
     export HOSTS=$PRODUCTION_HOSTS
     export APP_USER=$PRODUCTION_USER
+    export DELIVER_TO=$DELIVER_TO
   else
     export HOSTS=$STAGING_HOSTS
     export APP_USER=$STAGING_USER
